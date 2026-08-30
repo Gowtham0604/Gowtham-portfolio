@@ -2,47 +2,44 @@
 
 import * as React from 'react';
 import { certifications } from '@/data/portfolio';
-import { Award, CheckCircle, ExternalLink } from 'lucide-react';
+import { Award, CheckCircle } from 'lucide-react';
 
 export function Certifications() {
   return (
-    <section id="certifications" className="py-20 border-t border-border/50 relative">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="certifications" className="py-24 border-t border-border dark:border-white/[0.06] relative">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex items-center gap-3 mb-4">
-          <div className="h-px w-8 bg-emerald-500" />
-          <span className="text-xs uppercase tracking-widest text-emerald-500 font-mono font-semibold">
-            05. Credentials
+        <div className="mb-14">
+          <span className="text-xs font-semibold uppercase tracking-wider text-[#86868b] block mb-2">
+            Verification
           </span>
+          <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-foreground">
+            Certifications.
+          </h2>
         </div>
-        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground mb-4">
-          Certifications & Accreditations
-        </h2>
-        <p className="text-muted-foreground max-w-2xl mb-10 text-sm sm:text-base">
-          Validated problem solving and domain expertise across core languages and development paradigms.
-        </p>
 
-        {/* Horizontal Badge Row */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+        {/* Apple Credentials Row */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {certifications.map((cert, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-2xl border border-border bg-card shadow-sm hover:border-emerald-500/40 hover:shadow-glow transition-all flex items-center gap-4 group"
+              className="rounded-3xl p-7 bg-card dark:bg-[#161617] border border-border dark:border-white/[0.08] shadow-[0_2px_12px_rgba(0,0,0,0.03)] dark:shadow-none hover:border-black/[0.15] dark:hover:border-white/[0.2] transition-all duration-300 flex flex-col justify-between"
             >
-              <div className="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-500 group-hover:scale-105 transition-transform shrink-0">
-                <Award className="w-6 h-6" />
-              </div>
-              <div className="min-w-0">
-                <div className="flex items-center gap-1.5 text-xs font-mono text-emerald-600 dark:text-emerald-400 font-semibold mb-0.5">
+              <div>
+                <div className="w-10 h-10 rounded-2xl bg-[#0071e3]/10 dark:bg-[#2997ff]/15 flex items-center justify-center text-[#0071e3] dark:text-[#2997ff] mb-5">
+                  <Award className="w-5 h-5" />
+                </div>
+                <div className="flex items-center gap-1.5 text-xs font-medium text-[#0071e3] dark:text-[#2997ff] mb-1">
                   <CheckCircle className="w-3.5 h-3.5" />
                   <span>{cert.badgeText || 'Verified'}</span>
                 </div>
-                <h3 className="font-bold text-foreground text-base truncate group-hover:text-emerald-500 transition-colors">
+                <h3 className="font-bold text-foreground text-lg tracking-tight">
                   {cert.title}
                 </h3>
-                <p className="text-xs text-muted-foreground mt-0.5">
-                  Issued by {cert.issuer}
-                </p>
+              </div>
+
+              <div className="pt-6 mt-6 border-t border-border dark:border-white/[0.08] text-xs text-[#86868b]">
+                Issued by {cert.issuer}
               </div>
             </div>
           ))}

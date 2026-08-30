@@ -15,66 +15,61 @@ export function Skills() {
   const getCategoryIcon = (title: string) => {
     switch (title) {
       case 'Languages':
-        return <Code2 className="w-5 h-5 text-emerald-500" />;
+        return <Code2 className="w-5 h-5 text-[#2997ff]" />;
       case 'Backend & APIs':
-        return <Server className="w-5 h-5 text-emerald-500" />;
+        return <Server className="w-5 h-5 text-[#30d158]" />;
       case 'Cloud & DevOps':
-        return <Cloud className="w-5 h-5 text-emerald-500" />;
+        return <Cloud className="w-5 h-5 text-[#bf5af2]" />;
       case 'Databases':
-        return <Database className="w-5 h-5 text-emerald-500" />;
+        return <Database className="w-5 h-5 text-[#ff9f0a]" />;
       case 'AI & LLM Tooling':
-        return <BrainCircuit className="w-5 h-5 text-emerald-500" />;
+        return <BrainCircuit className="w-5 h-5 text-[#64d2ff]" />;
       case 'Developer Tools':
       default:
-        return <Wrench className="w-5 h-5 text-emerald-500" />;
+        return <Wrench className="w-5 h-5 text-[#ff453a]" />;
     }
   };
 
   return (
-    <section id="skills" className="py-20 border-t border-border/50 relative">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="skills" className="py-24 border-t border-border dark:border-white/[0.06] relative">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex items-center gap-3 mb-4">
-          <div className="h-px w-8 bg-emerald-500" />
-          <span className="text-xs uppercase tracking-widest text-emerald-500 font-mono font-semibold">
-            04. Technical Capabilities
+        <div className="mb-14">
+          <span className="text-xs font-semibold uppercase tracking-wider text-[#86868b] block mb-2">
+            Toolchain
           </span>
+          <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-foreground">
+            Skills &amp; Technologies.
+          </h2>
         </div>
-        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground mb-4">
-          Skills & Technologies
-        </h2>
-        <p className="text-muted-foreground max-w-2xl mb-12 text-sm sm:text-base">
-          A targeted toolchain focused on backend robustness, cloud scalability, modern APIs, and high-velocity AI workflows.
-        </p>
 
-        {/* Categories Grid */}
+        {/* Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, idx) => (
             <div
               key={idx}
-              className="p-6 rounded-2xl border border-border bg-card shadow-sm hover:border-emerald-500/40 transition-all group flex flex-col justify-between"
+              className="rounded-3xl p-7 bg-card dark:bg-[#161617] border border-border dark:border-white/[0.08] shadow-[0_2px_12px_rgba(0,0,0,0.03)] dark:shadow-none hover:border-black/[0.15] dark:hover:border-white/[0.2] transition-all duration-300 flex flex-col justify-between"
             >
               <div>
                 {/* Category Header */}
-                <div className="flex items-center gap-3 mb-5">
-                  <div className="p-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/20 group-hover:bg-emerald-500/20 transition-colors">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-9 h-9 rounded-xl bg-black/[0.04] dark:bg-white/[0.06] flex items-center justify-center">
                     {getCategoryIcon(category.title)}
                   </div>
-                  <h3 className="font-bold text-foreground text-lg group-hover:text-emerald-500 transition-colors">
+                  <h3 className="font-bold text-foreground text-base">
                     {category.title}
                   </h3>
                 </div>
 
-                {/* Skill Badges */}
+                {/* Skill Pills */}
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill) => (
-                    <div
+                    <span
                       key={skill.name}
-                      className="px-3 py-1.5 rounded-lg border border-border/90 bg-muted/60 hover:bg-muted text-foreground text-xs sm:text-sm font-medium transition-colors flex items-center gap-1.5"
+                      className="px-3.5 py-1.5 rounded-full text-xs font-medium bg-black/[0.04] dark:bg-white/[0.06] border border-black/[0.06] dark:border-white/[0.08] text-foreground hover:bg-black/[0.08] dark:hover:bg-white/[0.1] transition-colors"
                     >
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                      <span>{skill.name}</span>
-                    </div>
+                      {skill.name}
+                    </span>
                   ))}
                 </div>
               </div>
