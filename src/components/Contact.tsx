@@ -78,7 +78,7 @@ export function Contact() {
           {/* Left Cards */}
           <div className="lg:col-span-5 space-y-4">
             {/* Email Card */}
-            <div className="rounded-3xl p-6 apple-glass-card flex items-center justify-between gap-4">
+            <div className="py-6 flex items-center justify-between gap-4">
               <div className="flex items-center gap-4 min-w-0">
                 <div className="w-11 h-11 rounded-2xl bg-black/[0.04] dark:bg-white/[0.06] flex items-center justify-center text-foreground shrink-0 shadow-sm">
                   <Mail className="w-4 h-4" />
@@ -96,7 +96,7 @@ export function Contact() {
               <button
                 onClick={handleCopyEmail}
                 aria-label="Copy email"
-                className="btn-glass-secondary p-2.5 rounded-full text-foreground cursor-pointer"
+                className="bg-black/5 dark:bg-white/10 text-foreground hover:bg-black/10 dark:hover:bg-white/20 p-2.5 rounded-full text-foreground cursor-pointer"
                 title="Copy email"
               >
                 {copiedEmail ? (
@@ -108,7 +108,7 @@ export function Contact() {
             </div>
 
             {/* Phone Card */}
-            <div className="rounded-3xl p-6 apple-glass-card flex items-center justify-between gap-4">
+            <div className="py-6 flex items-center justify-between gap-4">
               <div className="flex items-center gap-4 min-w-0">
                 <div className="w-11 h-11 rounded-2xl bg-black/[0.04] dark:bg-white/[0.06] flex items-center justify-center text-foreground shrink-0 shadow-sm">
                   <Phone className="w-4 h-4" />
@@ -126,7 +126,7 @@ export function Contact() {
               <button
                 onClick={handleCopyPhone}
                 aria-label="Copy phone"
-                className="btn-glass-secondary p-2.5 rounded-full text-foreground cursor-pointer"
+                className="bg-black/5 dark:bg-white/10 text-foreground hover:bg-black/10 dark:hover:bg-white/20 p-2.5 rounded-full text-foreground cursor-pointer"
                 title="Copy phone"
               >
                 {copiedPhone ? (
@@ -142,7 +142,7 @@ export function Contact() {
               href={personalInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-3xl p-6 apple-glass-card flex items-center justify-between gap-4 group cursor-pointer"
+              className="py-6 flex items-center justify-between gap-4 group cursor-pointer"
             >
               <div className="flex items-center gap-4 min-w-0">
                 <div className="w-11 h-11 rounded-2xl bg-[#0a66c2]/10 dark:bg-[#0a66c2]/20 text-[#0a66c2] flex items-center justify-center shrink-0 shadow-sm">
@@ -163,7 +163,7 @@ export function Contact() {
               href={personalInfo.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-3xl p-6 apple-glass-card flex items-center justify-between gap-4 group cursor-pointer"
+              className="py-6 flex items-center justify-between gap-4 group cursor-pointer"
             >
               <div className="flex items-center gap-4 min-w-0">
                 <div className="w-11 h-11 rounded-2xl bg-black/[0.04] dark:bg-white/[0.06] flex items-center justify-center text-foreground shrink-0 shadow-sm">
@@ -182,7 +182,7 @@ export function Contact() {
 
           {/* Right Form Card */}
           <div className="lg:col-span-7">
-            <div className="rounded-3xl p-8 sm:p-10 apple-glass-card">
+            <div className="py-8">
               <h3 className="text-xl font-bold tracking-tight text-foreground mb-6">
                 Send a direct message
               </h3>
@@ -249,7 +249,7 @@ export function Contact() {
                 <div className="pt-2">
                   <button
                     type="submit"
-                    className="btn-glass-primary inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full font-medium text-sm cursor-pointer shadow-md"
+                    className="bg-foreground text-background hover:opacity-90 inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full font-medium text-sm cursor-pointer shadow-md"
                   >
                     <span>Launch Mail Client</span>
                     <Send className="w-3.5 h-3.5" />

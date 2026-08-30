@@ -23,7 +23,7 @@ export function Certifications() {
           {certifications.map((cert, idx) => (
             <div
               key={idx}
-              className="rounded-3xl p-7 apple-glass-card flex flex-col justify-between"
+              className="py-6 flex flex-col justify-between"
             >
               <div>
                 <div className="w-11 h-11 rounded-2xl bg-[#0071e3]/10 dark:bg-[#2997ff]/15 flex items-center justify-center text-[#0071e3] dark:text-[#2997ff] mb-5 shadow-sm">

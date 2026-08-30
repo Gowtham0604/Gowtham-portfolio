@@ -54,7 +54,7 @@ export function About() {
         {/* Apple Glass Bento Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
           {/* Main Story Card - spans 7 cols */}
-          <div className="md:col-span-7 rounded-3xl p-8 sm:p-10 apple-glass-card flex flex-col justify-between">
+          <div className="md:col-span-7 py-8 flex flex-col justify-between">
             <div>
               <span className="text-xs font-medium uppercase tracking-wider text-[#86868b]">
                 Background
@@ -81,7 +81,7 @@ export function About() {
                 {personalInfo.targetRoles.map((role) => (
                   <span
                     key={role}
-                    className="badge-glass px-3.5 py-1.5 rounded-full text-xs font-medium text-foreground"
+                    className="bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/10 px-3.5 py-1.5 rounded-full text-xs font-medium text-foreground"
                   >
                     {role}
                   </span>
@@ -93,7 +93,7 @@ export function About() {
           {/* Education & Stats Bento Card - spans 5 cols */}
           <div className="md:col-span-5 flex flex-col gap-6">
             {/* Education Card */}
-            <div className="rounded-3xl p-8 apple-glass-card flex flex-col justify-between">
+            <div className="py-8 flex flex-col justify-between">
               <div>
                 <div className="w-11 h-11 rounded-2xl bg-[#0071e3]/10 dark:bg-[#2997ff]/15 flex items-center justify-center text-[#0071e3] dark:text-[#2997ff] mb-6 shadow-sm">
                   <GraduationCap className="w-6 h-6" />
@@ -123,7 +123,7 @@ export function About() {
             </div>
 
             {/* Location & Relocation Card */}
-            <div className="rounded-3xl p-7 apple-glass-card">
+            <div className="py-6">
               <span className="text-xs font-medium uppercase tracking-wider text-[#86868b]">
                 Current Base
               </span>
@@ -142,7 +142,7 @@ export function About() {
           {pillars.map((pillar, idx) => (
             <div
               key={idx}
-              className="rounded-3xl p-6 apple-glass-card flex flex-col justify-between"
+              className="py-6 flex flex-col justify-between"
             >
               <div>
                 <div className="w-10 h-10 rounded-2xl bg-black/[0.04] dark:bg-white/[0.06] flex items-center justify-center mb-4">

@@ -22,7 +22,7 @@ export function Experience() {
           {experiences.map((exp, idx) => (
             <div
               key={idx}
-              className="rounded-3xl p-8 sm:p-10 apple-glass-card"
+              className="py-8"
             >
               {/* Header row */}
               <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-3 pb-6 border-b border-border dark:border-white/[0.08]">
@@ -31,7 +31,7 @@ export function Experience() {
                     <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground">
                       {exp.role}
                     </h3>
-                    <span className="badge-glass px-3.5 py-1 rounded-full text-xs font-medium text-[#0071e3] dark:text-[#2997ff]">
+                    <span className="bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/10 px-3.5 py-1 rounded-full text-xs font-medium text-[#0071e3] dark:text-[#2997ff]">
                       {exp.type}
                     </span>
                   </div>
@@ -65,7 +65,7 @@ export function Experience() {
                 {exp.technologies.map((tech) => (
                   <span
                     key={tech}
-                    className="badge-glass px-3.5 py-1 rounded-full text-xs font-medium text-foreground"
+                    className="bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/10 px-3.5 py-1 rounded-full text-xs font-medium text-foreground"
                   >
                     {tech}
                   </span>

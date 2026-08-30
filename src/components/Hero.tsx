@@ -26,7 +26,7 @@ export function Hero() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="badge-glass inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-xs font-medium text-[#86868b] mb-8 shadow-sm"
+          className="bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/10 inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-xs font-medium text-[#86868b] mb-8 shadow-sm"
         >
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#2997ff] opacity-75"></span>
@@ -79,7 +79,7 @@ export function Hero() {
           {/* Primary Blue Glass Pill Button */}
           <a
             href="#projects"
-            className="btn-glass-primary inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium text-sm cursor-pointer"
+            className="bg-foreground text-background hover:opacity-90 inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium text-sm cursor-pointer"
           >
             <span>View Work</span>
             <ArrowRight className="w-4 h-4" />
@@ -88,7 +88,7 @@ export function Hero() {
           {/* Secondary Frosted Glass Pill Button */}
           <a
             href="#contact"
-            className="btn-glass-secondary inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium text-sm cursor-pointer"
+            className="bg-black/5 dark:bg-white/10 text-foreground hover:bg-black/10 dark:hover:bg-white/20 inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium text-sm cursor-pointer"
           >
             <Mail className="w-4 h-4 text-[#0071e3] dark:text-[#2997ff]" />
             <span>Contact Me</span>
@@ -100,7 +100,7 @@ export function Hero() {
             download="Gowtham_S_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-glass-secondary inline-flex items-center gap-2 px-6 py-3.5 rounded-full font-medium text-sm cursor-pointer"
+            className="bg-black/5 dark:bg-white/10 text-foreground hover:bg-black/10 dark:hover:bg-white/20 inline-flex items-center gap-2 px-6 py-3.5 rounded-full font-medium text-sm cursor-pointer"
           >
             <FileDown className="w-4 h-4 text-[#86868b]" />
             <span>Download Resume</span>
@@ -112,7 +112,7 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="inline-flex flex-wrap items-center justify-center gap-6 px-6 py-3 rounded-full badge-glass text-xs text-[#86868b]"
+          className="inline-flex flex-wrap items-center justify-center gap-6 px-6 py-3 rounded-full bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/10 text-xs text-[#86868b]"
         >
           <div className="flex items-center gap-1.5">
             <MapPin className="w-3.5 h-3.5 text-[#0071e3] dark:text-[#2997ff]" />

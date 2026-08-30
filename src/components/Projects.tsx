@@ -34,12 +34,12 @@ export function Projects() {
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="rounded-3xl p-8 sm:p-10 apple-glass-card flex flex-col justify-between group"
+              className="py-8 flex flex-col justify-between group"
             >
               <div>
                 {/* Header row */}
                 <div className="flex items-center justify-between gap-4 mb-4">
-                  <span className="badge-glass px-3.5 py-1 rounded-full text-xs font-medium text-[#86868b]">
+                  <span className="bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/10 px-3.5 py-1 rounded-full text-xs font-medium text-[#86868b]">
                     {project.category}
                   </span>
 
@@ -49,7 +49,7 @@ export function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`View ${project.title} on GitHub`}
-                      className="p-2.5 rounded-full badge-glass hover:bg-white/[0.14] text-foreground transition-all duration-200"
+                      className="p-2.5 rounded-full bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/10 hover:bg-white/[0.14] text-foreground transition-all duration-200"
                     >
                       <Github className="w-4 h-4" />
                     </a>
@@ -88,7 +88,7 @@ export function Projects() {
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="badge-glass px-3.5 py-1 rounded-full text-xs font-medium text-foreground"
+                    className="bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/10 px-3.5 py-1 rounded-full text-xs font-medium text-foreground"
                   >
                     {tag}
                   </span>

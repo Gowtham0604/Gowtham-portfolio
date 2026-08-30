@@ -48,7 +48,7 @@ export function Skills() {
           {skillCategories.map((category, idx) => (
             <div
               key={idx}
-              className="rounded-3xl p-7 apple-glass-card flex flex-col justify-between"
+              className="py-6 flex flex-col justify-between"
             >
               <div>
                 {/* Category Header */}
@@ -66,7 +66,7 @@ export function Skills() {
                   {category.skills.map((skill) => (
                     <span
                       key={skill.name}
-                      className="badge-glass px-3.5 py-1.5 rounded-full text-xs font-medium text-foreground hover:bg-white/[0.14] transition-colors"
+                      className="bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/10 px-3.5 py-1.5 rounded-full text-xs font-medium text-foreground hover:bg-white/[0.14] transition-colors"
                     >
                       {skill.name}
                     </span>

@@ -11,7 +11,7 @@ export function Navbar() {
 
   return (
     <header className="fixed top-4 left-0 right-0 z-50 px-4 sm:px-6 pointer-events-none">
-      <div className="max-w-4xl mx-auto apple-glass-dock rounded-full px-5 sm:px-6 py-2.5 flex items-center justify-between pointer-events-auto transition-all duration-300">
+      <div className="max-w-4xl mx-auto bg-white/80 dark:bg-black/80 backdrop-blur-md border border-black/5 dark:border-white/10 rounded-full px-5 sm:px-6 py-2.5 flex items-center justify-between pointer-events-auto transition-all duration-300">
         {/* Brand */}
         <Link
           href="#"
@@ -47,7 +47,7 @@ export function Navbar() {
             download="Gowtham_S_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-glass-primary inline-flex items-center gap-1.5 px-4 py-1.5 text-xs font-medium rounded-full cursor-pointer"
+            className="bg-foreground text-background hover:opacity-90 inline-flex items-center gap-1.5 px-4 py-1.5 text-xs font-medium rounded-full cursor-pointer"
           >
             <span>Resume</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
@@ -66,7 +66,7 @@ export function Navbar() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden mt-2 max-w-sm mx-auto apple-glass-dock rounded-3xl p-6 pointer-events-auto shadow-2xl animate-in fade-in zoom-in-95 duration-200">
+        <div className="md:hidden mt-2 max-w-sm mx-auto bg-white/80 dark:bg-black/80 backdrop-blur-md border border-black/5 dark:border-white/10 rounded-3xl p-6 pointer-events-auto shadow-2xl animate-in fade-in zoom-in-95 duration-200">
           <div className="flex flex-col gap-3.5">
             {navigationLinks.map((item) => (
               <a
@@ -86,7 +86,7 @@ export function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
-                className="btn-glass-primary inline-flex items-center gap-1 px-3.5 py-1 text-xs font-medium rounded-full"
+                className="bg-foreground text-background hover:opacity-90 inline-flex items-center gap-1 px-3.5 py-1 text-xs font-medium rounded-full"
               >
                 <span>Resume PDF</span>
                 <ArrowUpRight className="w-3 h-3" />
