@@ -1,0 +1,120 @@
+%PDF-1.4
+1 0 obj
+<<
+  /Type /Catalog
+  /Pages 2 0 R
+>>
+endobj
+2 0 obj
+<<
+  /Type /Pages
+  /Kids [3 0 R]
+  /Count 1
+>>
+endobj
+3 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 612 792]
+  /Contents 4 0 R
+  /Resources <<
+    /Font <<
+      /F1 5 0 R
+      /F2 6 0 R
+    >>
+  >>
+>>
+endobj
+4 0 obj
+<<
+  /Length 750
+>>
+stream
+BT
+/F2 20 Tf
+50 740 Td
+(GOWTHAM S) Tj
+/F1 10 Tf
+0 -18 Td
+(Forward Deployed Engineer | AI Engineer | Full-Stack Developer) Tj
+0 -14 Td
+(Bengaluru, Karnataka | gowthams6687@gmail.com | +91 9663716435) Tj
+0 -14 Td
+(GitHub: github.com/Gowtham0604 | LinkedIn: linkedin.com/in/gowtham-s-11532238a) Tj
+0 -26 Td
+/F2 12 Tf
+(EDUCATION) Tj
+/F1 10 Tf
+0 -16 Td
+(Malnad College of Engineering - B.E. in Information Science & Engineering (2021-2025)) Tj
+0 -14 Td
+(CGPA: 7.74 | Bengaluru, Karnataka) Tj
+0 -26 Td
+/F2 12 Tf
+(PROFESSIONAL EXPERIENCE) Tj
+/F1 10 Tf
+0 -16 Td
+(SupaDev Technologies Pvt Ltd - Forward Deployed Engineer Intern (Feb 2026 - Jun 2026)) Tj
+0 -14 Td
+(- Built & maintained production client-facing backend features in Python & REST APIs.) Tj
+0 -14 Td
+(- Deployed and hosted scalable services on AWS infrastructure.) Tj
+0 -14 Td
+(- Configured end-to-end automated CI/CD deployment pipelines with GitHub Actions.) Tj
+0 -14 Td
+(- Monitored production environments, triaged bugs, and iterated on client feedback.) Tj
+0 -26 Td
+/F2 12 Tf
+(PROJECTS) Tj
+/F1 10 Tf
+0 -16 Td
+(SupaCam - AI-Based Safety Monitoring System (Python, Go, OpenCV, WebSockets, PostgreSQL)) Tj
+0 -14 Td
+(Real-time camera surveillance detecting safety gear violations with Go WebSocket alerts.) Tj
+0 -18 Td
+(Valzy - Property Valuation Platform (Python, JavaScript, PostgreSQL, AWS Lambda)) Tj
+0 -14 Td
+(Valuation comparison crawler (2,000+ listings), Chrome extension & serverless report generator.) Tj
+0 -26 Td
+/F2 12 Tf
+(SKILLS) Tj
+/F1 10 Tf
+0 -16 Td
+(Languages: Python, JavaScript, Go, SQL | Cloud: AWS (Lambda, EC2, S3), Docker, GitHub Actions) Tj
+0 -14 Td
+(AI & Tools: OpenCV, WebSockets, LLM Tooling, Cursor, VS Code, PostgreSQL, MySQL) Tj
+ET
+endstream
+endobj
+5 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica
+>>
+endobj
+6 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica-Bold
+>>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000266 00000 n 
+0000001068 00000 n 
+0000001138 00000 n 
+trailer
+<<
+  /Size 7
+  /Root 1 0 R
+>>
+startxref
+1213
+%%EOF
