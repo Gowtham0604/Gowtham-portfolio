@@ -8,7 +8,6 @@ import {
   Cpu,
   ShieldCheck,
   Zap,
-  ArrowUpRight,
 } from 'lucide-react';
 
 export function About() {
@@ -52,10 +51,10 @@ export function About() {
           </h2>
         </div>
 
-        {/* Bento Grid Layout */}
+        {/* Apple Glass Bento Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
           {/* Main Story Card - spans 7 cols */}
-          <div className="md:col-span-7 rounded-3xl p-8 sm:p-10 bg-card dark:bg-[#161617] border border-border dark:border-white/[0.08] shadow-[0_2px_12px_rgba(0,0,0,0.03)] dark:shadow-none flex flex-col justify-between">
+          <div className="md:col-span-7 rounded-3xl p-8 sm:p-10 apple-glass-card flex flex-col justify-between">
             <div>
               <span className="text-xs font-medium uppercase tracking-wider text-[#86868b]">
                 Background
@@ -82,7 +81,7 @@ export function About() {
                 {personalInfo.targetRoles.map((role) => (
                   <span
                     key={role}
-                    className="px-3.5 py-1.5 rounded-full text-xs font-medium bg-black/[0.04] dark:bg-white/[0.06] border border-black/[0.06] dark:border-white/[0.08] text-foreground"
+                    className="badge-glass px-3.5 py-1.5 rounded-full text-xs font-medium text-foreground"
                   >
                     {role}
                   </span>
@@ -94,10 +93,10 @@ export function About() {
           {/* Education & Stats Bento Card - spans 5 cols */}
           <div className="md:col-span-5 flex flex-col gap-6">
             {/* Education Card */}
-            <div className="rounded-3xl p-8 bg-card dark:bg-[#161617] border border-border dark:border-white/[0.08] shadow-[0_2px_12px_rgba(0,0,0,0.03)] dark:shadow-none flex flex-col justify-between">
+            <div className="rounded-3xl p-8 apple-glass-card flex flex-col justify-between">
               <div>
-                <div className="w-10 h-10 rounded-2xl bg-[#0071e3]/10 dark:bg-[#2997ff]/15 flex items-center justify-center text-[#0071e3] dark:text-[#2997ff] mb-6">
-                  <GraduationCap className="w-5 h-5" />
+                <div className="w-11 h-11 rounded-2xl bg-[#0071e3]/10 dark:bg-[#2997ff]/15 flex items-center justify-center text-[#0071e3] dark:text-[#2997ff] mb-6 shadow-sm">
+                  <GraduationCap className="w-6 h-6" />
                 </div>
                 <span className="text-xs font-medium uppercase tracking-wider text-[#86868b]">
                   Education
@@ -124,7 +123,7 @@ export function About() {
             </div>
 
             {/* Location & Relocation Card */}
-            <div className="rounded-3xl p-7 bg-card dark:bg-[#161617] border border-border dark:border-white/[0.08] shadow-[0_2px_12px_rgba(0,0,0,0.03)] dark:shadow-none">
+            <div className="rounded-3xl p-7 apple-glass-card">
               <span className="text-xs font-medium uppercase tracking-wider text-[#86868b]">
                 Current Base
               </span>
@@ -138,20 +137,24 @@ export function About() {
           </div>
         </div>
 
-        {/* 4 Pillars - Bento Row */}
+        {/* 4 Pillars - Glass Bento Row */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-6">
           {pillars.map((pillar, idx) => (
             <div
               key={idx}
-              className="rounded-3xl p-6 bg-card dark:bg-[#161617] border border-border dark:border-white/[0.08] shadow-[0_2px_12px_rgba(0,0,0,0.03)] dark:shadow-none hover:border-black/[0.15] dark:hover:border-white/[0.2] transition-all duration-300"
+              className="rounded-3xl p-6 apple-glass-card flex flex-col justify-between"
             >
-              <div className="mb-4">{pillar.icon}</div>
-              <h4 className="font-semibold text-sm text-foreground mb-1.5">
-                {pillar.title}
-              </h4>
-              <p className="text-xs text-[#86868b] leading-relaxed">
-                {pillar.description}
-              </p>
+              <div>
+                <div className="w-10 h-10 rounded-2xl bg-black/[0.04] dark:bg-white/[0.06] flex items-center justify-center mb-4">
+                  {pillar.icon}
+                </div>
+                <h4 className="font-semibold text-sm text-foreground mb-1.5">
+                  {pillar.title}
+                </h4>
+                <p className="text-xs text-[#86868b] leading-relaxed">
+                  {pillar.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

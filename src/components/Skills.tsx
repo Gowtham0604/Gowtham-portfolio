@@ -43,17 +43,17 @@ export function Skills() {
           </h2>
         </div>
 
-        {/* Bento Grid */}
+        {/* Glass Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, idx) => (
             <div
               key={idx}
-              className="rounded-3xl p-7 bg-card dark:bg-[#161617] border border-border dark:border-white/[0.08] shadow-[0_2px_12px_rgba(0,0,0,0.03)] dark:shadow-none hover:border-black/[0.15] dark:hover:border-white/[0.2] transition-all duration-300 flex flex-col justify-between"
+              className="rounded-3xl p-7 apple-glass-card flex flex-col justify-between"
             >
               <div>
                 {/* Category Header */}
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-9 h-9 rounded-xl bg-black/[0.04] dark:bg-white/[0.06] flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-2xl bg-black/[0.04] dark:bg-white/[0.06] flex items-center justify-center shadow-sm">
                     {getCategoryIcon(category.title)}
                   </div>
                   <h3 className="font-bold text-foreground text-base">
@@ -66,7 +66,7 @@ export function Skills() {
                   {category.skills.map((skill) => (
                     <span
                       key={skill.name}
-                      className="px-3.5 py-1.5 rounded-full text-xs font-medium bg-black/[0.04] dark:bg-white/[0.06] border border-black/[0.06] dark:border-white/[0.08] text-foreground hover:bg-black/[0.08] dark:hover:bg-white/[0.1] transition-colors"
+                      className="badge-glass px-3.5 py-1.5 rounded-full text-xs font-medium text-foreground hover:bg-white/[0.14] transition-colors"
                     >
                       {skill.name}
                     </span>

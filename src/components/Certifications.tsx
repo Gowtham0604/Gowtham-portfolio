@@ -23,13 +23,13 @@ export function Certifications() {
           {certifications.map((cert, idx) => (
             <div
               key={idx}
-              className="rounded-3xl p-7 bg-card dark:bg-[#161617] border border-border dark:border-white/[0.08] shadow-[0_2px_12px_rgba(0,0,0,0.03)] dark:shadow-none hover:border-black/[0.15] dark:hover:border-white/[0.2] transition-all duration-300 flex flex-col justify-between"
+              className="rounded-3xl p-7 apple-glass-card flex flex-col justify-between"
             >
               <div>
-                <div className="w-10 h-10 rounded-2xl bg-[#0071e3]/10 dark:bg-[#2997ff]/15 flex items-center justify-center text-[#0071e3] dark:text-[#2997ff] mb-5">
+                <div className="w-11 h-11 rounded-2xl bg-[#0071e3]/10 dark:bg-[#2997ff]/15 flex items-center justify-center text-[#0071e3] dark:text-[#2997ff] mb-5 shadow-sm">
                   <Award className="w-5 h-5" />
                 </div>
-                <div className="flex items-center gap-1.5 text-xs font-medium text-[#0071e3] dark:text-[#2997ff] mb-1">
+                <div className="flex items-center gap-1.5 text-xs font-medium text-[#0071e3] dark:text-[#2997ff] mb-1.5">
                   <CheckCircle className="w-3.5 h-3.5" />
                   <span>{cert.badgeText || 'Verified'}</span>
                 </div>

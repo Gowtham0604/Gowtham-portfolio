@@ -78,9 +78,9 @@ export function Contact() {
           {/* Left Cards */}
           <div className="lg:col-span-5 space-y-4">
             {/* Email Card */}
-            <div className="rounded-3xl p-6 bg-card dark:bg-[#161617] border border-border dark:border-white/[0.08] shadow-[0_2px_12px_rgba(0,0,0,0.03)] dark:shadow-none flex items-center justify-between gap-4">
+            <div className="rounded-3xl p-6 apple-glass-card flex items-center justify-between gap-4">
               <div className="flex items-center gap-4 min-w-0">
-                <div className="w-10 h-10 rounded-2xl bg-black/[0.04] dark:bg-white/[0.06] flex items-center justify-center text-foreground shrink-0">
+                <div className="w-11 h-11 rounded-2xl bg-black/[0.04] dark:bg-white/[0.06] flex items-center justify-center text-foreground shrink-0 shadow-sm">
                   <Mail className="w-4 h-4" />
                 </div>
                 <div className="min-w-0">
@@ -96,7 +96,7 @@ export function Contact() {
               <button
                 onClick={handleCopyEmail}
                 aria-label="Copy email"
-                className="p-2.5 rounded-full bg-black/[0.04] dark:bg-white/[0.06] hover:bg-black/[0.08] dark:hover:bg-white/[0.12] text-foreground transition-colors cursor-pointer"
+                className="btn-glass-secondary p-2.5 rounded-full text-foreground cursor-pointer"
                 title="Copy email"
               >
                 {copiedEmail ? (
@@ -108,9 +108,9 @@ export function Contact() {
             </div>
 
             {/* Phone Card */}
-            <div className="rounded-3xl p-6 bg-card dark:bg-[#161617] border border-border dark:border-white/[0.08] shadow-[0_2px_12px_rgba(0,0,0,0.03)] dark:shadow-none flex items-center justify-between gap-4">
+            <div className="rounded-3xl p-6 apple-glass-card flex items-center justify-between gap-4">
               <div className="flex items-center gap-4 min-w-0">
-                <div className="w-10 h-10 rounded-2xl bg-black/[0.04] dark:bg-white/[0.06] flex items-center justify-center text-foreground shrink-0">
+                <div className="w-11 h-11 rounded-2xl bg-black/[0.04] dark:bg-white/[0.06] flex items-center justify-center text-foreground shrink-0 shadow-sm">
                   <Phone className="w-4 h-4" />
                 </div>
                 <div className="min-w-0">
@@ -126,7 +126,7 @@ export function Contact() {
               <button
                 onClick={handleCopyPhone}
                 aria-label="Copy phone"
-                className="p-2.5 rounded-full bg-black/[0.04] dark:bg-white/[0.06] hover:bg-black/[0.08] dark:hover:bg-white/[0.12] text-foreground transition-colors cursor-pointer"
+                className="btn-glass-secondary p-2.5 rounded-full text-foreground cursor-pointer"
                 title="Copy phone"
               >
                 {copiedPhone ? (
@@ -142,10 +142,10 @@ export function Contact() {
               href={personalInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-3xl p-6 bg-card dark:bg-[#161617] border border-border dark:border-white/[0.08] shadow-[0_2px_12px_rgba(0,0,0,0.03)] dark:shadow-none flex items-center justify-between gap-4 group hover:border-black/[0.15] dark:hover:border-white/[0.2] transition-all duration-300"
+              className="rounded-3xl p-6 apple-glass-card flex items-center justify-between gap-4 group cursor-pointer"
             >
               <div className="flex items-center gap-4 min-w-0">
-                <div className="w-10 h-10 rounded-2xl bg-[#0a66c2]/10 dark:bg-[#0a66c2]/20 text-[#0a66c2] flex items-center justify-center shrink-0">
+                <div className="w-11 h-11 rounded-2xl bg-[#0a66c2]/10 dark:bg-[#0a66c2]/20 text-[#0a66c2] flex items-center justify-center shrink-0 shadow-sm">
                   <Linkedin className="w-4 h-4" />
                 </div>
                 <div className="min-w-0">
@@ -163,10 +163,10 @@ export function Contact() {
               href={personalInfo.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-3xl p-6 bg-card dark:bg-[#161617] border border-border dark:border-white/[0.08] shadow-[0_2px_12px_rgba(0,0,0,0.03)] dark:shadow-none flex items-center justify-between gap-4 group hover:border-black/[0.15] dark:hover:border-white/[0.2] transition-all duration-300"
+              className="rounded-3xl p-6 apple-glass-card flex items-center justify-between gap-4 group cursor-pointer"
             >
               <div className="flex items-center gap-4 min-w-0">
-                <div className="w-10 h-10 rounded-2xl bg-black/[0.04] dark:bg-white/[0.06] flex items-center justify-center text-foreground shrink-0">
+                <div className="w-11 h-11 rounded-2xl bg-black/[0.04] dark:bg-white/[0.06] flex items-center justify-center text-foreground shrink-0 shadow-sm">
                   <Github className="w-4 h-4" />
                 </div>
                 <div className="min-w-0">
@@ -182,7 +182,7 @@ export function Contact() {
 
           {/* Right Form Card */}
           <div className="lg:col-span-7">
-            <div className="rounded-3xl p-8 sm:p-10 bg-card dark:bg-[#161617] border border-border dark:border-white/[0.08] shadow-[0_2px_12px_rgba(0,0,0,0.03)] dark:shadow-none">
+            <div className="rounded-3xl p-8 sm:p-10 apple-glass-card">
               <h3 className="text-xl font-bold tracking-tight text-foreground mb-6">
                 Send a direct message
               </h3>
@@ -199,7 +199,7 @@ export function Contact() {
                       placeholder="Alex Miller"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-3 rounded-2xl border border-border dark:border-white/[0.1] bg-black/[0.02] dark:bg-white/[0.04] text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-[#0071e3] dark:focus:ring-[#2997ff] transition-all"
+                      className="w-full px-4 py-3 rounded-2xl border border-border dark:border-white/[0.12] bg-black/[0.03] dark:bg-white/[0.04] text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-[#0071e3] dark:focus:ring-[#2997ff] transition-all"
                     />
                   </div>
 
@@ -213,7 +213,7 @@ export function Contact() {
                       placeholder="alex@company.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 rounded-2xl border border-border dark:border-white/[0.1] bg-black/[0.02] dark:bg-white/[0.04] text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-[#0071e3] dark:focus:ring-[#2997ff] transition-all"
+                      className="w-full px-4 py-3 rounded-2xl border border-border dark:border-white/[0.12] bg-black/[0.03] dark:bg-white/[0.04] text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-[#0071e3] dark:focus:ring-[#2997ff] transition-all"
                     />
                   </div>
                 </div>
@@ -228,7 +228,7 @@ export function Contact() {
                     placeholder="Forward Deployed / AI Engineering Opportunity"
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                    className="w-full px-4 py-3 rounded-2xl border border-border dark:border-white/[0.1] bg-black/[0.02] dark:bg-white/[0.04] text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-[#0071e3] dark:focus:ring-[#2997ff] transition-all"
+                    className="w-full px-4 py-3 rounded-2xl border border-border dark:border-white/[0.12] bg-black/[0.03] dark:bg-white/[0.04] text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-[#0071e3] dark:focus:ring-[#2997ff] transition-all"
                   />
                 </div>
 
@@ -242,14 +242,14 @@ export function Contact() {
                     placeholder="Tell me about your team, challenge, or project..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-3 rounded-2xl border border-border dark:border-white/[0.1] bg-black/[0.02] dark:bg-white/[0.04] text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-[#0071e3] dark:focus:ring-[#2997ff] transition-all resize-none"
+                    className="w-full px-4 py-3 rounded-2xl border border-border dark:border-white/[0.12] bg-black/[0.03] dark:bg-white/[0.04] text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-[#0071e3] dark:focus:ring-[#2997ff] transition-all resize-none"
                   />
                 </div>
 
                 <div className="pt-2">
                   <button
                     type="submit"
-                    className="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full bg-[#0071e3] dark:bg-[#f5f5f7] text-white dark:text-[#000000] font-medium text-sm hover:opacity-90 transition-opacity cursor-pointer shadow-sm"
+                    className="btn-glass-primary inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full font-medium text-sm cursor-pointer shadow-md"
                   >
                     <span>Launch Mail Client</span>
                     <Send className="w-3.5 h-3.5" />

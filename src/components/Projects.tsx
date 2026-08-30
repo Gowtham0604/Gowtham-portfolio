@@ -29,17 +29,17 @@ export function Projects() {
           </a>
         </div>
 
-        {/* Apple-style Bento Project Showcase */}
+        {/* Apple Glass Bento Project Showcase */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="rounded-3xl p-8 sm:p-10 bg-card dark:bg-[#161617] border border-border dark:border-white/[0.08] shadow-[0_2px_12px_rgba(0,0,0,0.03)] dark:shadow-none hover:border-black/[0.15] dark:hover:border-white/[0.2] transition-all duration-300 flex flex-col justify-between group"
+              className="rounded-3xl p-8 sm:p-10 apple-glass-card flex flex-col justify-between group"
             >
               <div>
                 {/* Header row */}
                 <div className="flex items-center justify-between gap-4 mb-4">
-                  <span className="px-3 py-1 rounded-full text-xs font-medium bg-black/[0.04] dark:bg-white/[0.06] border border-black/[0.06] dark:border-white/[0.08] text-[#86868b]">
+                  <span className="badge-glass px-3.5 py-1 rounded-full text-xs font-medium text-[#86868b]">
                     {project.category}
                   </span>
 
@@ -49,7 +49,7 @@ export function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`View ${project.title} on GitHub`}
-                      className="p-2 rounded-full bg-black/[0.04] dark:bg-white/[0.06] hover:bg-black/[0.08] dark:hover:bg-white/[0.12] text-foreground transition-colors"
+                      className="p-2.5 rounded-full badge-glass hover:bg-white/[0.14] text-foreground transition-all duration-200"
                     >
                       <Github className="w-4 h-4" />
                     </a>
@@ -69,8 +69,8 @@ export function Projects() {
                   {project.description}
                 </p>
 
-                {/* Apple Specs List */}
-                <div className="space-y-2.5 mb-8 p-5 rounded-2xl bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.04] dark:border-white/[0.04]">
+                {/* Apple Specs Glass Sub-card */}
+                <div className="space-y-2.5 mb-8 p-5 rounded-2xl bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.05] dark:border-white/[0.06] backdrop-blur-sm">
                   <span className="text-xs font-semibold uppercase tracking-wider text-[#86868b] block mb-2">
                     Key Architecture:
                   </span>
@@ -83,12 +83,12 @@ export function Projects() {
                 </div>
               </div>
 
-              {/* Minimal Tech Chips */}
+              {/* Minimal Glass Tech Chips */}
               <div className="pt-4 border-t border-border dark:border-white/[0.08] flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="px-3 py-1 rounded-full text-xs font-medium bg-black/[0.04] dark:bg-white/[0.06] border border-black/[0.06] dark:border-white/[0.08] text-foreground"
+                    className="badge-glass px-3.5 py-1 rounded-full text-xs font-medium text-foreground"
                   >
                     {tag}
                   </span>
