@@ -17,10 +17,10 @@ export function Hero() {
   return (
     <section className="relative min-h-[92vh] flex items-center justify-center pt-32 pb-20 overflow-hidden">
       {/* Apple-style multi-stop ambient specular lighting */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[400px] bg-gradient-to-b from-[#2997ff]/20 via-[#a855f7]/12 to-transparent rounded-full blur-[140px] pointer-events-none -z-10" />
-      <div className="absolute top-1/2 right-1/4 w-[300px] h-[300px] bg-[#0071e3]/15 rounded-full blur-[120px] pointer-events-none -z-10" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[850px] lg:w-[1200px] h-[450px] bg-gradient-to-b from-[#2997ff]/20 via-[#a855f7]/12 to-transparent rounded-full blur-[140px] pointer-events-none -z-10" />
+      <div className="absolute top-1/2 right-1/4 w-[400px] h-[400px] bg-[#0071e3]/15 rounded-full blur-[140px] pointer-events-none -z-10" />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 text-center w-full">
         {/* Apple Glass Pill Eyebrow */}
         <motion.div
           initial={{ opacity: 0, y: -10 }}
@@ -42,7 +42,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-5xl sm:text-7xl md:text-8xl font-bold tracking-[-0.04em] text-foreground leading-[1.05] mb-4"
+          className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-[-0.04em] text-foreground leading-[1.05] mb-4"
         >
           <span className="text-gradient-titanium">
             {personalInfo.name}
@@ -54,7 +54,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-[-0.025em] text-[#86868b] mb-6"
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-[-0.025em] text-[#86868b] mb-6"
         >
           Forward Deployed Engineer. Data &amp; Backend Systems.
         </motion.div>
@@ -64,7 +64,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="max-w-2xl mx-auto text-base sm:text-lg text-muted-foreground font-normal leading-relaxed mb-10"
+          className="max-w-3xl mx-auto text-base sm:text-lg lg:text-xl text-muted-foreground font-normal leading-relaxed mb-10"
         >
           Building robust data ingestion pipelines, relational database architectures, and automated cloud workflows. Moving data reliably from concept to production.
         </motion.p>
@@ -100,9 +100,9 @@ export function Hero() {
             download="Gowtham_S_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-black/5 dark:bg-white/10 text-foreground hover:bg-black/10 dark:hover:bg-white/20 inline-flex items-center gap-2 px-6 py-3.5 rounded-full font-medium text-sm cursor-pointer"
+            className="border-2 border-[#2997ff] bg-black/5 dark:bg-white/10 text-foreground hover:bg-[#2997ff]/10 dark:hover:bg-[#2997ff]/15 hover:border-[#60a5fa] inline-flex items-center gap-2 px-6 py-3.5 rounded-full font-medium text-sm cursor-pointer shadow-[0_0_20px_rgba(41,151,255,0.25)] transition-all duration-200"
           >
-            <FileDown className="w-4 h-4 text-[#86868b]" />
+            <FileDown className="w-4 h-4 text-[#2997ff]" />
             <span>Download Resume</span>
           </a>
         </motion.div>

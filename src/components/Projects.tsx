@@ -7,7 +7,7 @@ import { ArrowUpRight, Github, Check } from 'lucide-react';
 export function Projects() {
   return (
     <section id="projects" className="py-24 border-t border-border dark:border-white/[0.06] relative">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-14">
           <div>

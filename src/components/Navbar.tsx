@@ -10,8 +10,8 @@ export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
 
   return (
-    <header className="fixed top-4 left-0 right-0 z-50 px-4 sm:px-6 pointer-events-none">
-      <div className="max-w-4xl mx-auto bg-white/80 dark:bg-black/80 backdrop-blur-md border border-black/5 dark:border-white/10 rounded-full px-5 sm:px-6 py-2.5 flex items-center justify-between pointer-events-auto transition-all duration-300">
+    <header className="fixed top-4 left-0 right-0 z-50 px-4 sm:px-8 lg:px-12 pointer-events-none">
+      <div className="max-w-5xl xl:max-w-6xl mx-auto bg-white/80 dark:bg-black/80 backdrop-blur-md border border-black/5 dark:border-white/10 rounded-full px-6 sm:px-8 py-3 flex items-center justify-between pointer-events-auto transition-all duration-300 shadow-sm">
         {/* Brand */}
         <Link
           href="#"

@@ -40,7 +40,7 @@ export function About() {
 
   return (
     <section id="about" className="py-24 border-t border-border dark:border-white/[0.06] relative">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
         {/* Section Header */}
         <div className="mb-14">
           <span className="text-xs font-semibold uppercase tracking-wider text-[#86868b] block mb-2">
