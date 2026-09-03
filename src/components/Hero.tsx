@@ -26,13 +26,13 @@ export function Hero() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/10 inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-xs font-medium text-[#86868b] mb-8 shadow-sm"
+          className="bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/10 inline-flex items-center gap-3 px-5 py-2 rounded-full mb-8 shadow-sm"
         >
-          <span className="relative flex h-2 w-2">
+          <span className="relative flex h-2.5 w-2.5">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#2997ff] opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#2997ff]"></span>
+            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#2997ff]"></span>
           </span>
-          <span className="text-foreground/90 font-medium">
+          <span className="text-foreground/95 dark:text-white/95 font-medium text-[13px] sm:text-sm tracking-tight">
             Available for Roles &middot; Data &amp; Backend &middot; Data Pipelines &middot; Cloud Automation
           </span>
         </motion.div>

@@ -64,13 +64,13 @@
 
 /* Typography Gradients */
 .text-gradient-titanium {
-  background: linear-gradient(180deg, #ffffff 15%, #9e9ea4 100%);
+  background: linear-gradient(180deg, #ffffff 30%, #c4c4ca 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 :not(.dark) .text-gradient-titanium {
-  background: linear-gradient(180deg, #1d1d1f 20%, #434346 100%);
+  background: linear-gradient(180deg, #111113 25%, #38383c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
