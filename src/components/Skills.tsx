@@ -4,10 +4,9 @@ import * as React from 'react';
 import { skillCategories } from '@/data/portfolio';
 import {
   Code2,
-  Server,
   Cloud,
   Database,
-  BrainCircuit,
+  CheckCircle2,
   Wrench,
 } from 'lucide-react';
 
@@ -16,15 +15,12 @@ export function Skills() {
     switch (title) {
       case 'Languages':
         return <Code2 className="w-5 h-5 text-[#2997ff]" />;
-      case 'Backend & APIs':
-        return <Server className="w-5 h-5 text-[#30d158]" />;
-      case 'Cloud & DevOps':
-        return <Cloud className="w-5 h-5 text-[#bf5af2]" />;
-      case 'Databases':
+      case 'Data & Databases':
         return <Database className="w-5 h-5 text-[#ff9f0a]" />;
-      case 'AI & LLM Tooling':
-        return <BrainCircuit className="w-5 h-5 text-[#64d2ff]" />;
-      case 'Developer Tools':
+      case 'Cloud & Tools':
+        return <Cloud className="w-5 h-5 text-[#bf5af2]" />;
+      case 'Practices':
+        return <CheckCircle2 className="w-5 h-5 text-[#30d158]" />;
       default:
         return <Wrench className="w-5 h-5 text-[#ff453a]" />;
     }
@@ -43,8 +39,8 @@ export function Skills() {
           </h2>
         </div>
 
-        {/* Glass Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Glass Bento Grid (2x2 Balanced Layout) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {skillCategories.map((category, idx) => (
             <div
               key={idx}

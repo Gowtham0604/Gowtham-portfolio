@@ -5,8 +5,7 @@ export interface Project {
   highlights: string[];
   tags: string[];
   github?: string;
-  liveUrl?: string;
-  category: 'AI / Backend' | 'Full-Stack / Cloud';
+  category: string;
 }
 
 export interface ExperienceItem {

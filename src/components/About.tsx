@@ -5,8 +5,8 @@ import { personalInfo } from '@/data/portfolio';
 import {
   GraduationCap,
   Layers,
-  Cpu,
-  ShieldCheck,
+  Database,
+  Cloud,
   Zap,
 } from 'lucide-react';
 
@@ -14,27 +14,27 @@ export function About() {
   const pillars = [
     {
       icon: <Layers className="w-5 h-5 text-[#2997ff]" />,
-      title: 'Backend Systems',
+      title: 'Data & ETL Pipelines',
       description:
-        'Resilient APIs, microservices, and database models designed for high concurrency and zero-downtime reliability.',
+        'End-to-end data ingestion, transformation, and storage pipelines in Python moving data reliably into PostgreSQL.',
     },
     {
-      icon: <Cpu className="w-5 h-5 text-[#a855f7]" />,
-      title: 'Real-Time & AI Tooling',
+      icon: <Database className="w-5 h-5 text-[#ff9f0a]" />,
+      title: 'Relational Schemas & SQL',
       description:
-        'Computer vision pipelines, WebSocket event streamers, and LLM integrations engineered for practical enterprise speed.',
+        'RDBMS design, indexing, and query optimization reducing latency across high-volume production tables.',
     },
     {
-      icon: <Zap className="w-5 h-5 text-[#ec4899]" />,
-      title: 'Forward Deployed Agility',
+      icon: <Cloud className="w-5 h-5 text-[#bf5af2]" />,
+      title: 'Cloud & CI/CD Automation',
       description:
-        'Translating client needs into production software, triaging edge cases, and continuous delivery based on live telemetry.',
+        'Automated CI/CD pipelines via GitHub Actions, AWS serverless orchestration (Lambda, EC2, S3), and Docker.',
     },
     {
-      icon: <ShieldCheck className="w-5 h-5 text-[#30d158]" />,
-      title: 'Cloud & Infrastructure',
+      icon: <Zap className="w-5 h-5 text-[#30d158]" />,
+      title: 'Forward Deployed Delivery',
       description:
-        'Automated CI/CD workflows via GitHub Actions, containerized Docker deployments, and serverless AWS orchestration.',
+        'Delivering robust client-facing platforms, data validation & reconciliation, and agile collaboration.',
     },
   ];
 
@@ -60,14 +60,14 @@ export function About() {
                 Background
               </span>
               <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground mt-2 mb-6">
-                Taking features from concept to deployment.
+                Building reliable data pipelines and scalable backends.
               </h3>
               <div className="space-y-4 text-[#515154] dark:text-[#a1a1a6] text-sm sm:text-base leading-relaxed">
                 <p>
-                  I hold a Bachelor of Engineering in Information Science &amp; Engineering from Malnad College of Engineering (2021–2025). My focus is on writing robust backend systems, architecting event-driven pipelines, and integrating practical AI tooling.
+                  I hold a Bachelor of Engineering in Information Science &amp; Engineering from Malnad College of Engineering (2021–2025, CGPA: 7.74). My engineering focus centers on building resilient data pipelines, optimizing relational database architectures, and deploying cloud automation.
                 </p>
                 <p>
-                  As a Forward Deployed Engineer, I operate at the intersection of technical architecture and client impact — deploying scalable services on AWS, configuring automated CI/CD pipelines, and rapidly iterating on real-world production feedback.
+                  As a Forward Deployed Engineer Intern at SupaDev Technologies, I engineered data ingestion and transformation pipelines for production client-facing applications, optimized complex SQL queries for high-volume PostgreSQL tables, and implemented automated CI/CD workflows using GitHub Actions.
                 </p>
               </div>
             </div>

@@ -33,7 +33,7 @@ export function Hero() {
             <span className="relative inline-flex rounded-full h-2 w-2 bg-[#2997ff]"></span>
           </span>
           <span className="text-foreground/90 font-medium">
-            Available for Roles &middot; Forward Deployed &middot; AI &middot; Full-Stack
+            Available for Roles &middot; Forward Deployed &middot; Data &amp; Backend &middot; Cloud Pipelines
           </span>
         </motion.div>
 
@@ -56,7 +56,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-[-0.025em] text-[#86868b] mb-6"
         >
-          Forward Deployed Engineer. Full-Stack Developer.
+          Forward Deployed Engineer. Data &amp; Backend Systems.
         </motion.div>
 
         {/* Description Paragraph */}
@@ -66,7 +66,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="max-w-2xl mx-auto text-base sm:text-lg text-muted-foreground font-normal leading-relaxed mb-10"
         >
-          Building high-concurrency backend architectures, real-time AI pipelines, and cloud-native systems. Taking mission-critical software from concept to production.
+          Building robust data ingestion pipelines, relational database architectures, and automated cloud workflows. Moving data reliably from concept to production.
         </motion.p>
 
         {/* Ultra-Premium Apple Glass Action Buttons */}
