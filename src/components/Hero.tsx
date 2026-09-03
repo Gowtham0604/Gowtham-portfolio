@@ -33,7 +33,7 @@ export function Hero() {
             <span className="relative inline-flex rounded-full h-2 w-2 bg-[#2997ff]"></span>
           </span>
           <span className="text-foreground/90 font-medium">
-            Available for Roles &middot; Forward Deployed &middot; Data &amp; Backend &middot; Cloud Pipelines
+            Available for Roles &middot; Data &amp; Backend &middot; Data Pipelines &middot; Cloud Automation
           </span>
         </motion.div>
 
@@ -49,14 +49,14 @@ export function Hero() {
           </span>
         </motion.h1>
 
-        {/* Apple Subheading */}
+        {/* Headline */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-[-0.025em] text-[#86868b] mb-6"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-[-0.025em] text-[#0071e3] dark:text-[#2997ff] mb-6"
         >
-          Forward Deployed Engineer. Data &amp; Backend Systems.
+          Data &amp; Backend Engineer
         </motion.div>
 
         {/* Description Paragraph */}
@@ -66,7 +66,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="max-w-3xl mx-auto text-base sm:text-lg lg:text-xl text-muted-foreground font-normal leading-relaxed mb-10"
         >
-          Building robust data ingestion pipelines, relational database architectures, and automated cloud workflows. Moving data reliably from concept to production.
+          Engineering robust data pipelines, PostgreSQL architectures, and reliable backend systems in Python. Experienced in automated cloud deployment, schema optimization, and shipping real-world products from concept to live production.
         </motion.p>
 
         {/* Ultra-Premium Apple Glass Action Buttons */}

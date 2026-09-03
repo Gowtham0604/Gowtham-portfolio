@@ -3,8 +3,8 @@ import { Project, ExperienceItem, SkillCategory, Certification } from '@/types';
 export const personalInfo = {
   name: 'Gowtham S',
   initials: 'GS',
-  role: 'Forward Deployed Engineer & Data / Backend Engineer',
-  targetRoles: ['Forward Deployed Engineer', 'Data & Backend Engineer', 'Data Pipeline Engineer'],
+  role: 'Data & Backend Engineer',
+  targetRoles: ['Data & Backend Engineer', 'Data Pipeline Engineer', 'Python / Backend Developer'],
   location: 'Bengaluru, Karnataka',
   email: 'gowthams6687@gmail.com',
   phone: '+91 9663716435',
@@ -15,10 +15,10 @@ export const personalInfo = {
   linkedinUsername: 'gowtham-s-11532238a',
   resumeUrl: '/resume.pdf',
   shortIntro:
-    'Forward Deployed Engineer specializing in data ingestion pipelines, SQL query optimization, and reliable backend systems in Python. Experienced in moving high-volume data reliably into PostgreSQL, building automated CI/CD pipelines, and delivering production client-facing applications.',
+    'Data & Backend Engineer specializing in Python, SQL, PostgreSQL, and distributed data pipelines. Experienced in building production data ingestion systems, optimizing high-volume relational schemas, and shipping independent live products.',
   bio: [
-    'I hold a Bachelor of Engineering in Information Science & Engineering from Malnad College of Engineering (2021–2025, CGPA: 7.74). My engineering focus centers on building resilient data pipelines, optimizing relational database architectures, and deploying cloud automation.',
-    'As a Forward Deployed Engineer Intern at SupaDev Technologies, I engineered data ingestion and transformation pipelines for client-facing applications, optimized complex SQL queries for high-volume PostgreSQL tables, and implemented automated CI/CD workflows using GitHub Actions to improve deployment consistency.',
+    'I hold a Bachelor of Engineering in Information Science & Engineering from Malnad College of Engineering (2021–2025, CGPA: 7.74). My engineering focus centers on robust backend architectures, high-volume data ingestion/ETL pipelines, and relational database optimization in PostgreSQL.',
+    'Through my production internship at SupaDev Technologies, I built client-facing data pipelines in Python, wrote latency-reducing SQL queries against high-volume tables, and automated deployment via GitHub Actions CI/CD. In addition to enterprise data systems, I have independently architected, built, and shipped live, self-hosted web platforms including SideHustlesJob and RCBTeam.',
   ],
   education: {
     degree: 'B.E. Information Science & Engineering',
@@ -35,7 +35,7 @@ export const experiences: ExperienceItem[] = [
     location: 'Bengaluru, Karnataka',
     role: 'Forward Deployed Engineer Intern',
     period: 'Feb 2026 – Jun 2026',
-    type: 'Internship',
+    type: 'Professional Internship',
     responsibilities: [
       'Built and maintained data ingestion, transformation, and storage pipelines in Python for two production client-facing applications, moving data reliably into PostgreSQL.',
       'Wrote and optimized SQL queries against relational schemas for data extraction and reporting, reducing query latency on high-volume tables.',
@@ -43,36 +43,74 @@ export const experiences: ExperienceItem[] = [
       'Set up CI/CD pipelines with GitHub Actions to automate testing and deployment, cutting manual release steps and improving deployment consistency.',
       'Collaborated in sprint planning and code reviews via Git/GitHub, and maintained technical documentation for data features and API integrations.',
     ],
-    technologies: ['Python', 'SQL', 'PostgreSQL', 'GitHub Actions', 'Git/GitHub', 'CI/CD', 'AWS', 'Docker'],
+    technologies: ['Python', 'SQL', 'PostgreSQL', 'Data Pipelines', 'GitHub Actions', 'CI/CD', 'Git/GitHub'],
   },
 ];
 
 export const projects: Project[] = [
   {
     title: 'SupaCam',
-    subtitle: 'AI-Based Safety Monitoring System',
+    subtitle: 'AI-Based Real-Time Safety Monitoring System',
     description:
-      'Real-time safety compliance and monitoring platform built to ingest live video streams, process video frames with OpenCV, and detect safety violations such as missing helmets.',
+      'Real-time safety compliance and monitoring system that ingests live video feeds, processes frames with OpenCV, and streams safety violation alerts to a live review dashboard.',
     highlights: [
-      'Built a real-time data pipeline that ingests live video streams, processes frames with OpenCV, and detects safety violations such as missing helmets.',
-      'Designed a PostgreSQL schema to store structured detection events and built a WebSocket service to push low-latency alerts to a live review dashboard.',
+      'Built a real-time data pipeline in Python that ingests live video streams and processes frames with OpenCV to detect safety violations such as missing helmets.',
+      'Designed a structured PostgreSQL schema to persist detection events, timestamps, bounding boxes, and compliance metadata.',
+      'Implemented a low-latency WebSocket service to push real-time detection events and instant alerts to an operational review dashboard.',
+      'Optimized frame capture and ingestion throughput to maintain low pipeline latency during concurrent stream processing.',
     ],
-    tags: ['Python', 'OpenCV', 'WebSockets', 'PostgreSQL'],
+    tags: ['Python', 'OpenCV', 'WebSockets', 'PostgreSQL', 'Go', 'Data Pipelines'],
     github: 'https://github.com/Gowtham0604/Gowtham-portfolio',
-    category: 'AI & Real-Time',
+    category: 'Computer Vision & Streaming',
   },
   {
     title: 'Valzy',
-    subtitle: 'Property Valuation Platform',
+    subtitle: 'Automated Property Valuation & Data Platform',
     description:
-      'Scalable property valuation and comparative market analytics platform designed to collect real estate data across multiple sources, optimize relational storage, and automate valuation report generation.',
+      'Data ingestion and comparative valuation platform that collects real estate listings across multiple portals, normalizes property metrics, and automates report generation workflows.',
     highlights: [
-      'Built an ETL pipeline that collects property listing data from multiple real estate sources and loads it into PostgreSQL, powering price-trend analysis across 2,000+ listings.',
-      'Designed relational schemas for efficient storage and querying of listing data, and used AWS Lambda to automate parts of the ingestion and report-generation workflow.',
+      'Built an automated ETL pipeline collecting property listing data from multiple real estate sources into PostgreSQL, powering price-trend analysis across 2,000+ listings.',
+      'Designed and indexed relational schemas in PostgreSQL for efficient storage, multi-attribute filtering, and high-performance pricing queries.',
+      'Implemented serverless workflows with AWS Lambda to automate scheduled data ingestion and dynamic appraisal report generation.',
+      'Built data transformation pipelines in Python and JavaScript to standardize disparate listing schemas and calculate historical price trends.',
     ],
-    tags: ['Python', 'JavaScript', 'PostgreSQL', 'AWS Lambda'],
+    tags: ['Python', 'JavaScript', 'PostgreSQL', 'AWS Lambda', 'ETL/ELT', 'Data Pipelines'],
     github: 'https://github.com/Gowtham0604/Gowtham-portfolio',
-    category: 'Data & Cloud',
+    category: 'Data Platform & Cloud ETL',
+  },
+  {
+    title: 'SideHustlesJob',
+    subtitle: 'Bengaluru Part-Time Job Discovery Platform',
+    badge: 'Independent Project · Self-Hosted · Live',
+    description:
+      'Independently built and deployed job discovery product featuring curated local part-time opportunities, geolocation-based area filtering, and structured data validation.',
+    highlights: [
+      'Architected and deployed a self-hosted job discovery platform featuring curated local part-time opportunities and employer job submission workflows.',
+      'Implemented area and coordinate-based proximity search enabling candidates to discover commuting-friendly opportunities across Bengaluru neighborhoods.',
+      'Engineered backend foundation and relational SQL schema migrations to validate submissions, enforce data consistency, and index listing attributes.',
+      'Deployed on Cloudflare Edge with automated CI/CD, client-side caching, JSON-LD structured data, and sub-second page performance.',
+    ],
+    tags: ['Go', 'SQL', 'Astro', 'TypeScript', 'Tailwind CSS', 'Cloudflare Edge', 'REST APIs'],
+    liveUrl: 'https://sidehustlesjob.com/',
+    github: 'https://github.com/Gowtham0604/sidehustle',
+    category: 'Independent Product · Live',
+  },
+  {
+    title: 'RCBTeam',
+    subtitle: 'Daily IPL & Cricket Interactive Gaming Platform',
+    badge: 'Independent Project · Self-Hosted · Live',
+    description:
+      'Independently built and deployed interactive cricket platform delivering daily player-guessing challenges, automated IPL trivia, and programmatic sports news.',
+    highlights: [
+      'Engineered an interactive "Guess the Cricketer" game engine matching player era, nationality, role, and career metrics with a Hot & Cold feedback algorithm.',
+      'Built an automated daily IPL quiz engine delivering 5 verified daily challenge questions with source-backed answers and state persistence.',
+      'Designed programmatic content architecture with schema.org JSON-LD structured data for teams, trivia, and match histories.',
+      'Self-hosted and deployed to Cloudflare Edge with global CDN caching, responsive mobile drawer navigation, and zero-latency client hydration.',
+    ],
+    tags: ['Astro', 'TypeScript', 'Tailwind CSS', 'Cloudflare Edge', 'JSON-LD', 'Data Modeling'],
+    liveUrl: 'https://rcbteam.in/',
+    github: 'https://github.com/Gowtham0604/cricket-hot-cold',
+    category: 'Independent Product · Live',
   },
 ];
 
@@ -90,34 +128,34 @@ export const skillCategories: SkillCategory[] = [
     title: 'Data & Databases',
     skills: [
       { name: 'PostgreSQL', level: 'Advanced' },
-      { name: 'MySQL', level: 'Proficient' },
-      { name: 'RDBMS design & indexing', level: 'Advanced' },
-      { name: 'ETL/ELT pipeline development', level: 'Advanced' },
-      { name: 'Data validation & reconciliation', level: 'Advanced' },
-      { name: 'JSON/CSV', level: 'Advanced' },
+      { name: 'ETL / ELT Pipelines', level: 'Advanced' },
+      { name: 'Data Pipelines', level: 'Advanced' },
+      { name: 'Relational Schema Design', level: 'Advanced' },
+      { name: 'SQL Query Optimization', level: 'Advanced' },
+      { name: 'Data Validation & Reconciliation', level: 'Advanced' },
     ],
   },
   {
-    title: 'Cloud & Tools',
+    title: 'Backend & Architecture',
+    skills: [
+      { name: 'Backend Development', level: 'Advanced' },
+      { name: 'REST APIs', level: 'Advanced' },
+      { name: 'WebSockets', level: 'Proficient' },
+      { name: 'OpenCV (Video Processing)', level: 'Proficient' },
+      { name: 'Real-Time Event Streaming', level: 'Proficient' },
+      { name: 'Data Ingestion & Storage', level: 'Advanced' },
+    ],
+  },
+  {
+    title: 'Cloud, DevOps & Tools',
     skills: [
       { name: 'AWS (Lambda, EC2, S3)', level: 'Proficient' },
       { name: 'Docker', level: 'Proficient' },
-      { name: 'Kubernetes', level: 'Familiar' },
-      { name: 'Git/GitHub', level: 'Advanced' },
       { name: 'CI/CD (GitHub Actions)', level: 'Advanced' },
+      { name: 'Git / GitHub', level: 'Advanced' },
+      { name: 'Cloudflare Edge', level: 'Proficient' },
       { name: 'DBeaver', level: 'Proficient' },
       { name: 'Postman', level: 'Proficient' },
-    ],
-  },
-  {
-    title: 'Practices',
-    skills: [
-      { name: 'Data pipeline development', level: 'Advanced' },
-      { name: 'Schema design', level: 'Advanced' },
-      { name: 'Debugging', level: 'Advanced' },
-      { name: 'Code review', level: 'Advanced' },
-      { name: 'Agile collaboration', level: 'Proficient' },
-      { name: 'Technical documentation', level: 'Advanced' },
     ],
   },
 ];

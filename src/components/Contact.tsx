@@ -70,7 +70,7 @@ export function Contact() {
             Get in touch.
           </h2>
           <p className="text-[#86868b] mt-2 max-w-xl text-base">
-            Exploring Forward Deployed, Data &amp; Backend Engineering roles in Bengaluru and remote.
+            Exploring Data &amp; Backend Engineering, Data Pipelines, and Python/SQL roles in Bengaluru and remote.
           </p>
         </div>
 
@@ -225,7 +225,7 @@ export function Contact() {
                   <input
                     type="text"
                     required
-                    placeholder="Forward Deployed / Data & Backend Opportunity"
+                    placeholder="Data & Backend Engineering Opportunity"
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                     className="w-full px-4 py-3 rounded-2xl border border-border dark:border-white/[0.12] bg-black/[0.03] dark:bg-white/[0.04] text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-[#0071e3] dark:focus:ring-[#2997ff] transition-all"

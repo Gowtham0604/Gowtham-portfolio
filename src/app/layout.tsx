@@ -3,29 +3,32 @@ import './globals.css';
 import { Providers } from './providers';
 
 export const metadata: Metadata = {
-  title: 'Gowtham S | Forward Deployed Engineer & Data / Backend Engineer',
+  title: 'Gowtham S | Data & Backend Engineer',
   description:
-    'Portfolio of Gowtham S — Forward Deployed Engineer and Data / Backend Engineer based in Bengaluru. Experienced in building production data ingestion pipelines in Python, PostgreSQL schema design, and cloud automation.',
+    'Portfolio of Gowtham S — Data & Backend Engineer specializing in Python, SQL, PostgreSQL, distributed data pipelines, and AWS cloud systems. Experienced in production systems and independently shipped live products.',
   keywords: [
     'Gowtham S',
-    'Forward Deployed Engineer',
+    'Data & Backend Engineer',
     'Data Engineer',
     'Backend Engineer',
     'Bengaluru',
     'Python',
     'SQL',
     'PostgreSQL',
-    'AWS',
+    'Data Pipelines',
     'ETL Pipelines',
+    'AWS',
     'SupaCam',
     'Valzy',
+    'SideHustlesJob',
+    'RCBTeam',
   ],
   authors: [{ name: 'Gowtham S', url: 'https://github.com/Gowtham0604' }],
   creator: 'Gowtham S',
   openGraph: {
-    title: 'Gowtham S | Forward Deployed Engineer & Data / Backend Engineer',
+    title: 'Gowtham S | Data & Backend Engineer',
     description:
-      'Explore projects, production data systems, and engineering work by Gowtham S. Specializing in Python, PostgreSQL, ETL pipelines, and cloud automation.',
+      'Explore data pipelines, PostgreSQL architectures, and production backend projects by Gowtham S. Specializing in Python, SQL, AWS, and distributed systems.',
     type: 'website',
     locale: 'en_US',
   },

@@ -60,14 +60,17 @@ export function About() {
                 Background
               </span>
               <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground mt-2 mb-6">
-                Building reliable data pipelines and scalable backends.
+                Engineering reliable data pipelines and scalable backend architectures.
               </h3>
               <div className="space-y-4 text-[#515154] dark:text-[#a1a1a6] text-sm sm:text-base leading-relaxed">
                 <p>
-                  I hold a Bachelor of Engineering in Information Science &amp; Engineering from Malnad College of Engineering (2021–2025, CGPA: 7.74). My engineering focus centers on building resilient data pipelines, optimizing relational database architectures, and deploying cloud automation.
+                  I hold a Bachelor of Engineering in Information Science &amp; Engineering from Malnad College of Engineering (2021–2025, CGPA: 7.74). My core engineering work focuses on Python data pipelines, PostgreSQL schema design, and distributed backend systems.
                 </p>
                 <p>
-                  As a Forward Deployed Engineer Intern at SupaDev Technologies, I engineered data ingestion and transformation pipelines for production client-facing applications, optimized complex SQL queries for high-volume PostgreSQL tables, and implemented automated CI/CD workflows using GitHub Actions.
+                  During my production internship at SupaDev Technologies, I built reliable data ingestion and transformation pipelines in Python, optimized SQL query latency on high-volume tables, and automated release cycles with GitHub Actions CI/CD and AWS.
+                </p>
+                <p>
+                  Beyond professional client-facing systems, I have demonstrated end-to-end product ownership by architecting, self-hosting, and shipping live independent web platforms like <a href="https://sidehustlesjob.com/" target="_blank" rel="noopener noreferrer" className="text-[#0071e3] dark:text-[#2997ff] hover:underline font-medium">SideHustlesJob</a> and <a href="https://rcbteam.in/" target="_blank" rel="noopener noreferrer" className="text-[#0071e3] dark:text-[#2997ff] hover:underline font-medium">RCBTeam</a>.
                 </p>
               </div>
             </div>

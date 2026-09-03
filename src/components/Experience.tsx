@@ -10,11 +10,14 @@ export function Experience() {
         {/* Section Header */}
         <div className="mb-14">
           <span className="text-xs font-semibold uppercase tracking-wider text-[#86868b] block mb-2">
-            Career
+            Professional Experience
           </span>
           <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-foreground">
             Experience.
           </h2>
+          <p className="text-sm sm:text-base text-[#86868b] mt-2 max-w-2xl">
+            Client-facing engineering, data pipeline development, and production cloud infrastructure.
+          </p>
         </div>
 
         {/* Apple Glass Milestone Card */}
